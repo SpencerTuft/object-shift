@@ -1,4 +1,4 @@
-Object.prototype.shift = require('../object-shift');
+Object.prototype.shift = require('object-shift');
 
 let my_object = {
   name: 'John',
