@@ -3,6 +3,7 @@ module.exports = function (object, options) {
   if (options && typeof options === 'object') {
     Object.keys(options).forEach(old_key => {
       if (Object.keys(object).includes(old_key)) {
+        if (typeof options[old_key] !== 'string') throw new Error('option key-values must be strings');
         Object.defineProperty(object, options[old_key], Object.getOwnPropertyDescriptor(object, old_key));
         delete object[old_key];
       }

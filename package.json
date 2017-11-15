@@ -1,6 +1,6 @@
 {
   "name": "object-shift",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Rename any property of an object",
   "main": "index.js",
   "scripts": {
